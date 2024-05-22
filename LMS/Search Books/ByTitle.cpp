@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void byTitle(string library[], bool available[], int arr_size)
+void byTitle(string* books, bool available[], int* arr_size)
 {
 
     string book;
@@ -14,10 +14,10 @@ void byTitle(string library[], bool available[], int arr_size)
 
     getline(cin >> ws, book);
 
-    for (int i = 0; i < arr_size; i++)
+    for (int i = 0; i < *arr_size; i++)
     {
 
-        if (book == library[i])
+        if (book == books[i])
         {
 
             if (available[i])
@@ -36,11 +36,11 @@ void byTitle(string library[], bool available[], int arr_size)
             }
         }
 
-        if (i == arr_size - 1)
+        if (i == *arr_size - 1)
 
         {
 
-            cout << "sorry " << book << " is not available in the library";
+            cout << "sorry " << book << " is not available in the books";
         }
     }
 }

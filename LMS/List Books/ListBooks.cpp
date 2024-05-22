@@ -4,14 +4,15 @@
 
 using namespace std;
 
-void listBooks(string books[], string authorname[], int books_arr_size)
+void listBooks(string* books, string* authorname, int* books_arr_size, int* total_arr_size)
 {
 
-    cout << "\n\n" << left << setw(10) << "Sr.no" << left << setw(50) << "Book Title" << "Book Author" << endl;
+    cout << "\n\n"
+        << left << setw(10) << "Sr.no" << left << setw(50) << "Book Title" << "Book Author" << endl;
 
     cout << setfill('-') << setw(85) << "" << setfill(' ') << endl;
 
-    for (int i = 0; i < books_arr_size; i++)
+    for (int i = 0; i < *total_arr_size; i++)
     {
         int z = i + 1;
 

@@ -16,20 +16,20 @@ using namespace std;
 
 //// Adding Books
 
-	void addingBooks(string books[], string authorname[], int books_arr_size);
+	void addingBooks(string* books, string* authorname, bool* availbale, int* books_arr_size, int* total_arr_size);
 
 //// List Books
 
-	void listBooks(string books[],string authorname[], int books_arr_size);
+	void listBooks(string* books, string* authorname, int* books_arr_size, int* total_arr_size);
 
 //// Main Menu
 
-	void mainMenu(string books[], string authorname[], bool available[], int books_arr_size);
+	void mainMenu(string* books, string* authorname, bool* available, int* books_arr_size, int* total_arr_size);
 
 //// Search Books
 
-	void search(string books[], string authorName[], bool available[], int arr_size);
+	void search(string* books, string* authorName, bool available[], int* arr_size);
 
-	void byTitle(string library[], bool available[], int arr_size);
+	void byTitle(string* books, bool available[], int* arr_size);
 
-	void byAuthor(string library[], string author[], bool available[], int arr_size);
+	void byAuthor(string* books, string* authorName, bool available[], int* arr_size);

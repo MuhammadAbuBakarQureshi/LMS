@@ -6,20 +6,20 @@
 
 using namespace std;
 
-void addingBooks(string books[], string authorname[], int books_arr_size) {
+void addingBooks(string* books, string* authorname, bool* availbale, int* books_arr_size, int* total_arr_size)
+{
 
-
-    // initializing new array "library" and storing book in it
+    // initializing new array "books" and storing book in it
 
     cout << "\nEnter how many books you want to store : ";
 
-    int books_add; // "library" array size
+    int books_add; // "books" array size
 
     cin >> books_add; // user enter size here
 
-    int total_arr_size = books_arr_size + books_add;
+    *total_arr_size = *books_arr_size + books_add;
 
-    for (int i = books_arr_size; i < total_arr_size; i++) // initializing "library" array with book names
+    for (int i = *books_arr_size; i < *total_arr_size; i++) // initializing "books" array with book names
     {
 
         cout << "\nEnter " << 1 + i << " book name : "; // console message on terminal
@@ -29,6 +29,8 @@ void addingBooks(string books[], string authorname[], int books_arr_size) {
         cout << "\nEnter " << books[i] << " author name : ";
 
         getline(cin >> ws, authorname[i]); // user enter book author name here
+
+        availbale[i] = true;
 
         cout << endl;
     }
@@ -46,19 +48,18 @@ void addingBooks(string books[], string authorname[], int books_arr_size) {
     if (option == 1) // if you choose "1" then it will run block of code in if statement
     {
 
-        listBooks(books, authorname, total_arr_size);
+        listBooks(books, authorname, books_arr_size, total_arr_size);
     }
     else if (option == 2) // if you choose "0" then it will run block of code in else statement
     {
 
-        cout << "\nYou are exiting from library" << endl; // console this message on the screen
+        cout << "\nYou are exiting from books" << endl; // console this message on the screen
     }
     else
     {
 
         cout << "\nYou have entered wrong option\n"
             << endl;
-        cout << "You are exiting from library" << endl;
+        cout << "You are exiting from books" << endl;
     }
-
 }

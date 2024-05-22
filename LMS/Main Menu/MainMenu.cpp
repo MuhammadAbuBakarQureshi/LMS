@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void mainMenu(string books[], string authorname[], bool available[], int books_arr_size)
+void mainMenu(string* books, string* authorname, bool* available, int* books_arr_size, int* total_arr_size)
 {
 
     int option = 0;
@@ -16,11 +16,11 @@ void mainMenu(string books[], string authorname[], bool available[], int books_a
         cout << "\nMain Menu\n"
             << endl;
 
-        cout << "1. List Books." << endl
-            << "2. Search Books." << endl
-            << "3. Add Books." << endl
-            << "4. Lend Book." << endl
-            << "5. exit Library." << endl;
+        cout << "1. Library." << endl
+            << "2. Search." << endl
+            << "3. Add." << endl
+            << "4. Lend." << endl
+            << "5. exit." << endl;
 
         cout << "\nChoose one of em with sr.no : ";
 
@@ -31,18 +31,18 @@ void mainMenu(string books[], string authorname[], bool available[], int books_a
         switch (option)
         {
         case 1:
-            // library Function
-            listBooks(books, authorname, books_arr_size);
+            // books Function
+            listBooks(books, authorname, books_arr_size, total_arr_size);
             break;
 
         case 2:
             // Search Function
-            search(books, authorname, available, books_arr_size);
+            search(books, authorname, available, total_arr_size);
             break;
 
         case 3:
 
-            addingBooks(books, authorname, books_arr_size);
+            addingBooks(books, authorname, available, books_arr_size, total_arr_size);
             break;
 
         case 4:
@@ -54,7 +54,7 @@ void mainMenu(string books[], string authorname[], bool available[], int books_a
         case 5:
 
             // exit
-            cout << "Your exiting library" << endl;
+            cout << "Your exiting books" << endl;
             break;
         default:
 

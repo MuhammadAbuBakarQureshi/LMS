@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void search(string books[], string authorName[], bool available[], int arr_size)
+void search(string* books, string* authorName, bool available[], int* arr_size)
 {
 
     string authorname;
