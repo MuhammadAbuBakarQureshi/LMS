@@ -5,8 +5,10 @@
 
 using namespace std;
 
-void lend(bool* available, int index)
+void lend(bool* available, string* books, int index)
 {
 
+    cout << "\n\n\"" << books[index] << "\" Book is mark as lend " << endl;
+    
     available[index] = false;
 }

@@ -9,11 +9,14 @@ using namespace std;
 void search(string* books, string* authorName, bool available[], int* arr_size)
 {
 
+    cout << "\n\n" << setfill('-') << setw(85) << "" << setfill(' ') << endl;
+
     string authorname;
 
-    cout << "Do you want to search by author name or book title." << endl;
+    cout << "\n\nDo you want to search by author name or book title.\n" << endl;
 
-    cout << "write 1 to search by book title and 2 to search by author name.";
+    cout << "1. Search by Book Title" << endl 
+        << "2. Search by Author Name" << endl;
 
     int ans;
 

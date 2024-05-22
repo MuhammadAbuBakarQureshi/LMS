@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <istream>
+#include <iomanip>
 #include "../Functions.h"
 
 
@@ -8,6 +9,8 @@ using namespace std;
 
 void addingBooks(string* books, string* authorname, bool* availbale, int* books_arr_size, int* total_arr_size)
 {
+
+    cout << "\n\n" << setfill('-') << setw(85) << "" << setfill(' ') << endl;
 
     // initializing new array "books" and storing book in it
 
@@ -26,7 +29,7 @@ void addingBooks(string* books, string* authorname, bool* availbale, int* books_
 
         getline(cin >> ws, books[i]); // user enter book name here
 
-        cout << "\nEnter " << books[i] << " author name : ";
+        cout << "\nEnter \"" << books[i] << "\" author name : ";
 
         getline(cin >> ws, authorname[i]); // user enter book author name here
 

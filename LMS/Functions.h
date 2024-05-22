@@ -36,4 +36,4 @@ using namespace std;
 
 //// Lend Books
 
-	void lend(bool* available, int index);
+	void lend(bool* available, string* books, int index);

@@ -11,7 +11,7 @@ void byTitle(string* books, string* authorName, bool available[], int* arr_size)
 
     string book;
 
-    cout << "enter the title of book : ";
+    cout << "\nEnter the title of book : ";
 
     getline(cin >> ws, book);
 
@@ -24,13 +24,12 @@ void byTitle(string* books, string* authorName, bool available[], int* arr_size)
             if (available[i])
             {
 
-                cout << "yes " << book << " is currently available";
+                cout << "\nYes, \"" << book << "\" is currently available" << endl;
 
-                cout << "\n Do you want to lend this book\n"
-                    << endl;
+                cout << "\nDo you want to lend this book\n" << endl;
 
                 cout << "1. Yes" << endl
-                    << "2. No" << endl;
+                     << "2. No" << endl;
 
                 int lend_option;
 
@@ -41,7 +40,7 @@ void byTitle(string* books, string* authorName, bool available[], int* arr_size)
                 if (lend_option == 1)
                 {
 
-                    lend(available, index);
+                    lend(available, books, index);
                 }
                 else if (lend_option == 2)
                 {
@@ -61,7 +60,7 @@ void byTitle(string* books, string* authorName, bool available[], int* arr_size)
             else
             {
 
-                cout << "sorry " << book << " is borrowed by someone else";
+                cout << "\nSorry, \"" << book << "\" is borrowed by someone else.\n" << endl;;
 
                 break;
             }
@@ -71,7 +70,7 @@ void byTitle(string* books, string* authorName, bool available[], int* arr_size)
 
         {
 
-            cout << "sorry " << book << " is not available in the books";
+            cout << "\nSorry, \"" << book << "\" is not available in our library.\n" << endl;
         }
     }
 }

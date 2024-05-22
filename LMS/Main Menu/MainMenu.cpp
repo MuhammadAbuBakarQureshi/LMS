@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <time.h>
+#include <iomanip>
 #include "../Functions.h"
 
 using namespace std;
@@ -12,6 +13,8 @@ void mainMenu(string* books, string* authorname, bool* available, int* books_arr
 
     while (option != 5)
     {
+
+        cout << setfill('-') << setw(85) << "" << setfill(' ') << endl;
 
         cout << "\nMain Menu\n"
             << endl;
@@ -54,7 +57,7 @@ void mainMenu(string* books, string* authorname, bool* available, int* books_arr
         case 5:
 
             // exit
-            cout << "Your exiting books" << endl;
+            cout << "\nYou are leaving library\n" << endl;
             break;
         default:
 
