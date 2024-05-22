@@ -1,14 +1,35 @@
 #pragma once
 #include <string>
+#include <string.h>
 
-bool login(int usersIDs[], int size);
+using namespace std;
 
-void signup(int usersIDs[], int size);
+// LMS
 
-void mainMenu();
+//// Accounts
 
-void account(int usersIDs[], int userIDs_size);
+	void account(int usersIDs[], int userIDs_size);
 
-void addingBooks();
+	bool login(int usersIDs[], int size);
 
-void account(int usersIDs[], int userIDs_size);
+	void signup(int usersIDs[], int size);
+
+//// Adding Books
+
+	void addingBooks(string books[], string authorname[], int books_arr_size);
+
+//// List Books
+
+	void listBooks(string books[],string authorname[], int books_arr_size);
+
+//// Main Menu
+
+	void mainMenu(string books[], string authorname[], bool available[], int books_arr_size);
+
+//// Search Books
+
+	void search(string books[], string authorName[], bool available[], int arr_size);
+
+	void byTitle(string library[], bool available[], int arr_size);
+
+	void byAuthor(string library[], string author[], bool available[], int arr_size);

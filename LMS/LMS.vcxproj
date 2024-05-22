@@ -134,6 +134,9 @@
     <ClCompile Include="List Books\ListBooks.cpp" />
     <ClCompile Include="LMS.cpp" />
     <ClCompile Include="Main Menu\MainMenu.cpp" />
+    <ClCompile Include="Search Books\ByAuthor.cpp" />
+    <ClCompile Include="Search Books\ByTitle.cpp" />
+    <ClCompile Include="Search Books\Search.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Functions.h" />
