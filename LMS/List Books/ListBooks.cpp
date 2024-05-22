@@ -7,8 +7,7 @@ using namespace std;
 void listBooks(string* books, string* authorname, int* books_arr_size, int* total_arr_size)
 {
 
-    cout << "\n\n"
-        << left << setw(10) << "Sr.no" << left << setw(50) << "Book Title" << "Book Author" << endl;
+    cout << "\n\n" << left << setw(10) << "Sr.no" << left << setw(50) << "Book Title" << "Book Author" << endl;
 
     cout << setfill('-') << setw(85) << "" << setfill(' ') << endl;
 

@@ -131,6 +131,7 @@
     <ClCompile Include="Accounts\Login.cpp" />
     <ClCompile Include="Accounts\Signup.cpp" />
     <ClCompile Include="Adding Books\AddingBooks.cpp" />
+    <ClCompile Include="Lend Books\LendBooks.cpp" />
     <ClCompile Include="List Books\ListBooks.cpp" />
     <ClCompile Include="LMS.cpp" />
     <ClCompile Include="Main Menu\MainMenu.cpp" />

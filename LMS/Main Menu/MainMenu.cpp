@@ -48,7 +48,7 @@ void mainMenu(string* books, string* authorname, bool* available, int* books_arr
         case 4:
 
             // Lend Function
-            cout << "Lend" << endl;
+            search(books, authorname, available, total_arr_size);
             break;
 
         case 5:

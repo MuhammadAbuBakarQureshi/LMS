@@ -30,6 +30,10 @@ using namespace std;
 
 	void search(string* books, string* authorName, bool available[], int* arr_size);
 
-	void byTitle(string* books, bool available[], int* arr_size);
+	void byTitle(string* books, string* authorName, bool available[], int* arr_size);
 
 	void byAuthor(string* books, string* authorName, bool available[], int* arr_size);
+
+//// Lend Books
+
+	void lend(bool* available, int index);

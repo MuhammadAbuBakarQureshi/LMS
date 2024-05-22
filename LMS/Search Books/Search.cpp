@@ -22,7 +22,7 @@ void search(string* books, string* authorName, bool available[], int* arr_size)
     if (ans == 1)
     {
 
-        byTitle(books, available, arr_size);
+        byTitle(books, authorName, available, arr_size);
     }
 
     else if (ans == 2)
